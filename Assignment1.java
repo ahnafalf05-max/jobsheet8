@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Assigntment1 {
+public class Assignment1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter N (minimum 3): ");
