@@ -8,12 +8,13 @@ public class Square {
 
         
         for (int i = 1; i <= N; i++) {
-            // Loop kolom
-            for (int j = 1; j <= N; j++) {
+            System.out.print("*");
+            
+            for (int j = 1; i <= N; i++) {
                 System.out.print("*");
             }
-            // Pindah ke baris baru
-            System.out.println();
+            
+            System.out.println("");
         }
     }
 }
