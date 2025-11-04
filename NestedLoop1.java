@@ -5,7 +5,7 @@ public class NestedLoop1 {
         Scanner scanner = new Scanner(System.in);
         double[][] temps = new double[5][7];
 
-        // Input temperatures
+        
         for (int i = 0; i < temps.length; i++) {
             System.out.println("City " + i + ":");
             for (int j = 0; j < temps[0].length; j++) {
@@ -19,10 +19,16 @@ public class NestedLoop1 {
         int cityIndex = 0;
         for (double[] cityTemps : temps) {
             System.out.print("City " + cityIndex + ": ");
+            
+            double sum = 0;
             for (double temp : cityTemps) {
                 System.out.print(temp + " ");
+                sum += temp;
             }
-            System.out.println();
+            
+            double average = sum / cityTemps.length;
+            System.out.printf("→ Average: %.2f\n", average);
+            
             cityIndex++;
         }
 
@@ -36,7 +42,9 @@ To collect and display temperature data for 5 cities over 7 days using a 2D arra
 2.Modify the program to display an array using foreach! 
 Done
 3. Modify the program so that it can display the average value for each city!
-
+Done
+4. Commit and push the changes to GitHub
+Done
 
 
 
